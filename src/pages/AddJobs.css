@@ -1,0 +1,87 @@
+.userFormBorder {
+
+    border: 3px solid green;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #fff;
+}
+
+.table-bg {
+
+    background-color: #fff;
+}
+
+.table-bg tr th {
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.select-checkbox-style {
+
+    margin-top: 12px;
+}
+
+.add-btn-style {
+
+    color: #ffffff;
+    border: 2px solid #188dc7;
+    padding: 2px 10px;
+    font-size: 13px;
+    background: #188dc7;
+    transition: .5s;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.add-item-style {
+
+    border: 2px solid #188dc7;
+    background-color: #fff;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+.submit-btn-style {
+
+    color: #ffffff;
+    border: 2px solid #188dc7;
+    padding: 5px 25px;
+    font-size: 15px;
+    background: #188dc7;
+    transition: .5s;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.table-bg tr .th-style {
+
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px;
+    color: black;
+}
+
+.Add-request-bg {
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #fff;
+}
+
+.divider-style {
+
+    background-Color: #c4c4c4;
+    height: 5px;
+}
+
+.add-icon-style {
+
+    font-size: 20px !important;
+}
+
+.add-request-style {
+
+    font-size: 30px;
+    font-weight: 700;
+}

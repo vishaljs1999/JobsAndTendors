@@ -6,40 +6,40 @@ const Year = new Date().getFullYear()
 
 const Login = () => {
 
-const token = checkToken();
+    const token = checkToken();
 
-const navigate = useNavigate()
+    const navigate = useNavigate()
 
-const initialState = { email: "test@dapelican.com", password: "testpass1234" };
-const [userData, setUserData] = useState(initialState);
-const { email, password } = userData;
+    const initialState = { email: "test@dapelican.com", password: "testpass1234" };
+    const [userData, setUserData] = useState(initialState);
+    const { email, password } = userData;
 
-const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setUserData({ ...userData, [name]: value });   
-}
-
-const handleSubmit = () => {
-    if (userData.email === "test@dapelican.com" && userData.password === "testpass1234") {
-        login();
-    } else {
-        alert("Wrong Credentials");
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setUserData({ ...userData, [name]: value });
     }
-};
 
-useEffect(() => {
-    if (token) navigate("/app/dashboard");
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-}, []);
+    const handleSubmit = () => {
+        if (userData.email === "test@dapelican.com" && userData.password === "testpass1234") {
+            login();
+        } else {
+            alert("Wrong Credentials");
+        }
+    };
+
+    useEffect(() => {
+        if (token) navigate("/app/dashboard");
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
 
 
 
-  return (
-    <>
-<main className="form-signin">
-            <form onSubmit={handleSubmit}>
-            <div className="text-center">
+    return (
+        <>
+            <main className="form-signin">
+                <form onSubmit={handleSubmit}>
+                    <div className="text-center">
                         <img className="mb-2" src="/img/logo.png" alt="" width="72" height="72" />
                         <h1 className="h3 mb-3 fw-normal">Welcome to Back</h1>
 
@@ -63,7 +63,7 @@ useEffect(() => {
                     <button className="w-100 btn btn-lg btn-primary" type="submit">
                         Sign in
                     </button>
-                    <p className="mt-5 mb-3 text-muted">&copy; {Year} Dapelican </p>
+                    <p className="mt-5 mb-3 text-muted">&copy; {Year} Jobs and Tender </p>
                 </form>
             </main>
 
@@ -98,8 +98,8 @@ useEffect(() => {
                 `}
             </style>
 
-    </>
-  )
+        </>
+    )
 }
 
 export default Login

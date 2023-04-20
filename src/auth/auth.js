@@ -7,10 +7,10 @@ export const login = () => {
 }
 
 export const checkToken = () => {
-    const token = localStorage.getItem("token", 'this_is_a_demo_token' )
-    if(!token) return alert('You are not logged in')
+    const token = localStorage.getItem("token", 'this_is_a_demo_token')
+    if (!token) return alert('You are not logged in')
     return token
-    
+
 }
 
 
